@@ -10,7 +10,6 @@ import { useStateContext } from './contexts/ContextProvider';
  
 const App = () => {
     const {activeMenu} = useStateContext();
- 
   return (
     
    <div>
@@ -39,7 +38,7 @@ const App = () => {
 }>
     <div className='fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full'>
      <Navbar />
-    </div>
+   
 
 </div>
 <div>
@@ -60,6 +59,7 @@ const App = () => {
         {/* charts */}
         <Route path='/line' element="Line"/>
     </Routes>
+</div>
 </div>
 </div>
 </BrowserRouter>

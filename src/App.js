@@ -3,7 +3,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import {FiSettings } from 'react-icons/fi';
 import {TooltipComponent } from '@syncfusion/ej2-react-popups';
 import { Navbar, Footer, Sidebar, ThemeSettings } from './components';
-import { Ecommerce, Orders, Calendar, Employees, Editor, Customers, Kanban } from './pages';
+import { Acceuil, Etudiants, Export, Professeurs, Editor, Candidats, Import,Institutions } from './pages';
 import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
 
@@ -44,17 +44,17 @@ const App = () => {
 <div>
     <Routes>
         {/* dashbord Ecommerce, Orders, Calendar, Employees, Editor, Customers, Kanban ,ColorPicker */}
-        <Route path='/' element={<Ecommerce/>}/>
-        <Route path='/ecommerce' element={<Ecommerce/>}/>
+        <Route path='/' element={<Acceuil/>}/>
+        <Route path='/DPSE' element={<Acceuil/>}/>
         {/* Pages */}
-        <Route path='/employee' element={<Employees/>}/>
-        <Route path='/orders' element={<Orders/>}/>
-        <Route path='/customers' element={<Customers/>}/>
-
+        <Route path='/Professeurs' element={<Professeurs/>}/>
+        <Route path='/Etudiants' element={<Etudiants/>}/>
+        <Route path='/Candidats' element={<Candidats/>}/>
+        <Route path='/Institutions' element={<Institutions/>}/>
         {/* Apps */}
-        <Route path='/kanban' element={<Kanban/>}/>
+        <Route path='/Import' element={<Import/>}/>
         <Route path='/editor' element={<Editor/>}/>
-        <Route path='/calendar' element={<Calendar/>}/>
+        <Route path='/Export' element={<Export/>}/>
         {/* <Route path='/coler-picker' element={<ColorPicker/>}/> */}
         {/* charts */}
         <Route path='/line' element="Line"/>

@@ -496,17 +496,21 @@ export const links = [
         name: 'Candidats',
         icon: <RiContactsLine />,
       },
+      {
+        name: 'Institutions',
+        icon: <RiContactsLine />,
+      },
     ],
   },
   {
     title: 'Gestion',
     links: [
       {
-        name: 'calendar',
+        name: 'Export',
         icon: <AiOutlineCalendar />,
       },
       {
-        name: 'kanban',
+        name: 'Import',
         icon: <BsKanban />,
       },
       {
@@ -616,6 +620,15 @@ export const chatData = [
 
 export const earningData = [
   {
+    icon: <FaUsers />,
+    amount: '39.354',
+    percentage: '-12%',
+    title: 'Etudiants',
+    iconColor: 'rgb(0, 194, 146)',
+    iconBg: 'rgb(235, 250, 242)',
+    pcColor: 'red-600',
+  },
+  {
     icon: <FaSchool />,
     amount: '39.354',
     percentage: '-4%',
@@ -643,15 +656,7 @@ export const earningData = [
 
     pcColor: 'green-600',
   },
-  {
-    icon: <FaUsers />,
-    amount: '39.354',
-    percentage: '-12%',
-    title: 'utilisateurs',
-    iconColor: 'rgb(0, 194, 146)',
-    iconBg: 'rgb(235, 250, 242)',
-    pcColor: 'red-600',
-  },
+  
 ];
 
 export const recentTransactions = [
